@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css");
+
+#app {
+    font-family: 'NanumBarunGothic', sans-serif;
+    text-align: center;
+    color: #2c3e50;
+    background: rgb(241, 239, 220);
+    background: radial-gradient(circle, rgba(211, 107, 0, 0.1) 100%,rgba(241, 239, 220, 1) 0%);
+    padding: 8px;
+    font-size: 16px;
+    height: calc( 100vh - 16px);
+}
+
+#container {
+    max-width: 1280px;
+    min-width: 800px;
+    border: 2px solid #42032C;
+    background: rgb(241, 239, 220);
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    border-bottom: 2px solid #42032C;
+    height: 100px;
+}
+
+.header__logo {
+    display: flex;
+    width: 150px;
+    border-right: 2px solid #42032C;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo--img {
+    height: 48px;
+    width: 48px;
+}
+
+.header__layout--nav {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__layout--nav+.header__layout--nav {
+    border-left: 2px solid #42032C;
+}
+
+.header__layout--nav.primary {
+    flex: 2;
+}
+
+nav a {
+    font-weight: bold;
+    color: #E6D2AA;
+    padding: 0 15px;
+}
+
+nav a.router-link-exact-active {
+    color: #D36B00;
+}
+
+.main {
+    min-height: 720px;
+}
